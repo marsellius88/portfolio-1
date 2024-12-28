@@ -11,14 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
-const pages = [
-  "Home",
-  "Service",
-  "Projects",
-  "Testimonials",
-  "About Me",
-  "Contact",
-];
+const pages = ["Services", "Projects", "Testimonials", "About Me", "Contact"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Navbar() {

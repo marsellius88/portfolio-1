@@ -2,13 +2,9 @@ import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
 import Typography from "@mui/material/Typography";
-import { useTheme } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
-import ProfilePicture from "../../assets/woman-2.png";
 
-export default function Profile() {
-  const theme = useTheme();
-  const backgroundColor = theme.palette.secondary.main;
+export default function Profile({profilePicture}) {
   return (
     <Box>
       <Grid container>
@@ -21,7 +17,7 @@ export default function Profile() {
           <Box
             sx={{
               flex: 1,
-              bgcolor: backgroundColor,
+              bgcolor: "secondary.main",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
@@ -51,7 +47,7 @@ export default function Profile() {
               sx={{
                 fontSize: "1.2rem",
                 my: 4,
-                color: theme.palette.text.secondary
+                color: "text.secondary"
               }}
             >
               UI/UX Designer specializing in Shopify & Webflow.
@@ -65,7 +61,7 @@ export default function Profile() {
           size={6}
           sx={{
             height: "calc(100vh - 64px)", // Tinggi kolom
-            bgcolor: backgroundColor,
+            bgcolor: "secondary.main",
             pr: 6,
             pt: 2
           }}
@@ -80,7 +76,7 @@ export default function Profile() {
             }}
           > */}
             <img
-              src={ProfilePicture}
+              src={profilePicture}
               alt="Profile picture"
               style={{
                 width: "100%",

@@ -1,33 +1,10 @@
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
-import Typography from "@mui/material/Typography";
-import { useTheme } from "@mui/material";
-import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import SkillPaper from "./SkillPaper";
+import Heading from "./Heading";
 
-const skills = [
-  {
-    name: "Communication",
-    percentage: 75,
-  },
-  {
-    name: "Leadership",
-    percentage: 70,
-  },
-  {
-    name: "Teamwork",
-    percentage: 90,
-  },
-  {
-    name: "Flexibility",
-    percentage: 80,
-  },
-];
-
-export default function Skills() {
-  const theme = useTheme();
-  const backgroundColor = theme.palette.secondary.main;
+export default function Skills({ skills }) {
   return (
     <Box>
       <Grid container>
@@ -40,7 +17,7 @@ export default function Skills() {
           <Box
             sx={{
               flex: 1,
-              bgcolor: backgroundColor,
+              bgcolor: "secondary.main",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
@@ -49,33 +26,26 @@ export default function Skills() {
               pl: 8,
             }}
           >
-            <Stack alignItems="center" direction="row" gap={1}>
-              <LightbulbIcon sx={{ color: theme.palette.text.secondary }} />
-              <Typography
-                sx={{ color: theme.palette.text.secondary }}
-                variant="body1"
-              >
-                Special Skills
-              </Typography>
-            </Stack>
-            <Typography
-              variant="h3"
-              sx={{ fontSize: "4rem", fontWeight: "bold", my: 3 }}
-            >
-              My Skills
-            </Typography>
+            <Heading
+              icon="Lightbulb"
+              title="My Special Skills Here."
+              subtitle="Special Skills"
+            />
           </Box>
         </Grid>
         <Grid
           size={6}
           sx={{
-            height: "calc(100vh - 64px)", // Tinggi kolom
-            bgcolor: backgroundColor,
+            height: "calc(100vh - 64px)",
+            bgcolor: "secondary.main",
             pr: 8,
-            pt: 2,
+            py: 2,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
-          <Stack spacing={2}>
+          <Stack spacing={2} sx={{ width: "100%" }}>
             {skills.map((item, index) => (
               <SkillPaper key={index} skill={item} />
             ))}
