@@ -7,7 +7,7 @@ export default function Companies({ companies }) {
     <Box sx={{ px: 8, my: 16 }}>
       <Heading
         icon="Business"
-        title="Work with Trusted Company."
+        title="Work with Trusted Companies."
         subtitle="Favorite Clients"
       />
       <Grid container spacing={2}>

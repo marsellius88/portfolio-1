@@ -6,33 +6,20 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 
-const pages = ["Services", "Projects", "Testimonials", "About Me", "Contact"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const pages = [
+  { text: "Home", link: "/" },
+  { text: "Services", link: "/services" },
+  { text: "Projects", link: "/projects" },
+  // { text: "Testimonials", link: "/testimonials" },
+  { text: "About Me", link: "/about" },
+  { text: "Contact", link: "/contact" },
+];
 
 function Navbar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
     <AppBar position="fixed" component="nav">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
@@ -41,9 +28,7 @@ function Navbar() {
             sx={{
               mr: 5,
               display: { xs: "none", md: "flex" },
-              //   fontFamily: "monospace",
               fontWeight: 700,
-              //   letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
             }}
@@ -53,11 +38,12 @@ function Navbar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
+                component="a"
+                href={page.link}
                 key={page}
-                onClick={handleCloseNavMenu}
                 sx={{ my: 1, color: "white", display: "block" }}
               >
-                {page}
+                {page.text}
               </Button>
             ))}
           </Box>
