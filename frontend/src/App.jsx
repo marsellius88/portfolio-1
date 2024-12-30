@@ -13,6 +13,7 @@ import Company2 from "./assets/company-2.jpg";
 import Company3 from "./assets/company-3.png";
 import Company4 from "./assets/company-4.jpg";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import Projects from "./pages/Projects";
 
 const theme = createTheme({
   palette: {
@@ -131,17 +132,17 @@ const skills = [
 const statistics = [
   {
     icon: "Person",
-    value: "99",
+    value: 99,
     text: "Happy Clients",
   },
   {
     icon: "Settings",
-    value: "180",
+    value: 180,
     text: "Projects Completed",
   },
   {
     icon: "CalendarMonth",
-    value: "21",
+    value: 21,
     text: "Years of Experience",
   },
 ];
@@ -219,6 +220,7 @@ const router = createBrowserRouter(
         }
       />
       <Route path="services" element={<Services services={services} />} />
+      <Route path="projects" element={<Projects projects={projects} />} />
     </Route>
   )
 );

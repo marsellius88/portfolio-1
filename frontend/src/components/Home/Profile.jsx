@@ -4,12 +4,13 @@ import Grid from "@mui/material/Grid2";
 import Typography from "@mui/material/Typography";
 import DownloadIcon from "@mui/icons-material/Download";
 
-export default function Profile({profilePicture}) {
+export default function Profile({ profilePicture }) {
   return (
     <Box>
       <Grid container>
         <Grid
-          size={6}
+          // size={6}
+          size={{ xs: 12, sm: 12, md: 6 }}
           sx={{
             height: "calc(100vh - 64px)",
           }}
@@ -22,7 +23,7 @@ export default function Profile({profilePicture}) {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "flex-start",
-              height: '100%',
+              height: "100%",
               pl: 8,
             }}
           >
@@ -47,7 +48,7 @@ export default function Profile({profilePicture}) {
               sx={{
                 fontSize: "1.2rem",
                 my: 4,
-                color: "text.secondary"
+                color: "text.secondary",
               }}
             >
               UI/UX Designer specializing in Shopify & Webflow.
@@ -58,12 +59,13 @@ export default function Profile({profilePicture}) {
           </Box>
         </Grid>
         <Grid
-          size={6}
+          // size={6}
+          size={{ xs: 12, sm: 12, md: 6 }}
           sx={{
             height: "calc(100vh - 64px)", // Tinggi kolom
             bgcolor: "secondary.main",
             pr: 6,
-            pt: 2
+            pt: 2,
           }}
         >
           {/* <Box
@@ -75,15 +77,15 @@ export default function Profile({profilePicture}) {
               pt: 2,
             }}
           > */}
-            <img
-              src={profilePicture}
-              alt="Profile picture"
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-              }}
-            />
+          <img
+            src={profilePicture}
+            alt="Profile picture"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
           {/* </Box> */}
         </Grid>
       </Grid>

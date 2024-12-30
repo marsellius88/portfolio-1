@@ -1,14 +1,14 @@
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
-import ServiceCard from "../Home/ServiceCard";
+import ProjectCard from "../Home/ProjectCard";
 
-export default function ServicesList({ services }) {
+export default function ProjectsList({ projects }) {
   return (
     <Box sx={{ px: 8, my: 16 }}>
       <Grid container spacing={2}>
-        {services.map((item, index) => (
+        {projects.map((item, index) => (
           <Grid key={index} size={4}>
-            <ServiceCard service={item} />
+            <ProjectCard project={item} />
           </Grid>
         ))}
       </Grid>

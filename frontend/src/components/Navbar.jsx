@@ -36,11 +36,11 @@ function Navbar() {
             Jane's Portfolio
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
+            {pages.map((page, index) => (
               <Button
                 component="a"
                 href={page.link}
-                key={page}
+                key={index}
                 sx={{ my: 1, color: "white", display: "block" }}
               >
                 {page.text}
