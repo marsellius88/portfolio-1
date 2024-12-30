@@ -9,7 +9,7 @@ import * as Icons from "@mui/icons-material";
 export default function ServiceCard({ service }) {
   const IconComponent = Icons[service.icon] || Icons.HelpOutline;
   return (
-    <Card variant="outlined">
+    <Card variant="outlined" sx={{ mx: 1 }}>
       <CardContent>
         <IconComponent sx={{ fontSize: 50, mb: 2 }} color="primary" />
         <Typography
@@ -22,7 +22,7 @@ export default function ServiceCard({ service }) {
         <List>
           {service.list.map((item, index) => (
             <ListItem key={index} disablePadding>
-              <ListItemText primary={item} />
+              <ListItemText secondary={item} />
             </ListItem>
           ))}
         </List>

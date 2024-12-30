@@ -1,23 +1,24 @@
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid2";
 import ServiceCard from "./ServiceCard";
 import Heading from "./Heading";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { servicesCarouselSettings } from "../../config/config";
 
 export default function Services({ services }) {
   return (
-    <Box sx={{ px: 8, my: 8 }}>
+    <Box sx={{ px: 8, my: 16 }}>
       <Heading
         icon="DesignServices"
         title="Services Provide for My Clients."
         subtitle="My Services"
       />
-      <Grid container spacing={2}>
+      <Slider {...servicesCarouselSettings}>
         {services.map((item, index) => (
-          <Grid key={index} size={4}>
-            <ServiceCard service={item} />
-          </Grid>
+          <ServiceCard key={index} service={item} />
         ))}
-      </Grid>
+      </Slider>
     </Box>
   );
 }

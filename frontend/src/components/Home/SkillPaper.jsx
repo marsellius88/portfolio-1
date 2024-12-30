@@ -4,7 +4,6 @@ import { useTheme } from "@mui/material";
 import LinearProgressWithLabel from "../LinearProgressWithLabel";
 
 export default function SkillPaper({ skill }) {
-  const theme = useTheme();
   return (
     <Paper variant="outlined" sx={{ p: 3 }}>
       <Typography sx={{ pb: 1 }}>{skill.name}</Typography>
