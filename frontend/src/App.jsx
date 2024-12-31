@@ -152,25 +152,43 @@ const projects = [
     image:
       "https://htmldemo.net/lendex/lendex/assets/images/project/project-slider-img-1.jpg",
     title: "Givest - Non-Profit PSD Template",
-    description:
+    projectName: "Givest",
+    client: "aa",
+    budget: "$890.00",
+    duration: "25 days",
+    date: new Date("2024-02-09"),
+    shortDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    link: "/",
+    description:
+      "Lorem ipsum odor amet, consectetuer adipiscing elit. Feugiat maecenas est a sodales aenean elementum et? Massa vel scelerisque nostra blandit conubia mus? Sociosqu nunc ornare malesuada ultricies ex viverra faucibus dui. Efficitur placerat natoque parturient pellentesque mi. Commodo tortor mus per primis efficitur bibendum. Vel natoque mi class vitae sociosqu cubilia nostra etiam. Molestie nostra dolor volutpat parturient lobortis leo hendrerit pellentesque. Facilisis nunc hac felis aliquet; netus molestie curae lacinia. Primis lacinia justo semper hac; hendrerit dapibus consectetur.",
   },
   {
     image:
       "https://htmldemo.net/lendex/lendex/assets/images/project/project-slider-img-2.jpg",
     title: "Musion - Gardening Website Template",
-    description:
+    projectName: "Musion",
+    client: "bb",
+    budget: "$500.00",
+    duration: "15 days",
+    date: new Date("2024-03-10"),
+    shortDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    link: "/",
+    description:
+      "Lorem ipsum odor amet, consectetuer adipiscing elit. Feugiat maecenas est a sodales aenean elementum et? Massa vel scelerisque nostra blandit conubia mus? Sociosqu nunc ornare malesuada ultricies ex viverra faucibus dui. Efficitur placerat natoque parturient pellentesque mi. Commodo tortor mus per primis efficitur bibendum. Vel natoque mi class vitae sociosqu cubilia nostra etiam. Molestie nostra dolor volutpat parturient lobortis leo hendrerit pellentesque. Facilisis nunc hac felis aliquet; netus molestie curae lacinia. Primis lacinia justo semper hac; hendrerit dapibus consectetur.",
   },
   {
     image:
       "https://htmldemo.net/lendex/lendex/assets/images/project/project-slider-img-3.jpg",
     title: "SEOLLY - SEO Marketing and Digital Agency",
-    description:
+    projectName: "SEOLLY",
+    client: "cc",
+    budget: "$750.00",
+    duration: "21 days",
+    date: new Date("2024-07-15"),
+    shortDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    link: "/",
+    description:
+      "Lorem ipsum odor amet, consectetuer adipiscing elit. Feugiat maecenas est a sodales aenean elementum et? Massa vel scelerisque nostra blandit conubia mus? Sociosqu nunc ornare malesuada ultricies ex viverra faucibus dui. Efficitur placerat natoque parturient pellentesque mi. Commodo tortor mus per primis efficitur bibendum. Vel natoque mi class vitae sociosqu cubilia nostra etiam. Molestie nostra dolor volutpat parturient lobortis leo hendrerit pellentesque. Facilisis nunc hac felis aliquet; netus molestie curae lacinia. Primis lacinia justo semper hac; hendrerit dapibus consectetur.",
   },
 ];
 
