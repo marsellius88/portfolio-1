@@ -51,6 +51,8 @@ const services = [
   {
     icon: "Build",
     title: "UI/UX Design",
+    description:
+      "Lorem ipsum odor amet, consectetuer adipiscing elit. Feugiat maecenas est a sodales aenean elementum et? Massa vel scelerisque nostra blandit conubia mus? Sociosqu nunc ornare malesuada ultricies ex viverra faucibus dui. Efficitur placerat natoque parturient pellentesque mi.",
     list: [
       "Landing Pages",
       "User Flow",
@@ -62,11 +64,15 @@ const services = [
   {
     icon: "Code",
     title: "Development",
+    description:
+      "Lorem ipsum odor amet, consectetuer adipiscing elit. Feugiat maecenas est a sodales aenean elementum et? Massa vel scelerisque nostra blandit conubia mus? Sociosqu nunc ornare malesuada ultricies ex viverra faucibus dui. Efficitur placerat natoque parturient pellentesque mi.",
     list: ["HTML/CSS", "JavaScript", "Animation", "WordPress", "React"],
   },
   {
     icon: "Draw",
     title: "Illustration",
+    description:
+      "Lorem ipsum odor amet, consectetuer adipiscing elit. Feugiat maecenas est a sodales aenean elementum et? Massa vel scelerisque nostra blandit conubia mus? Sociosqu nunc ornare malesuada ultricies ex viverra faucibus dui. Efficitur placerat natoque parturient pellentesque mi.",
     list: [
       "Character Design",
       "Icon Set",
@@ -78,6 +84,8 @@ const services = [
   {
     icon: "Search",
     title: "SEO Marketing",
+    description:
+      "Lorem ipsum odor amet, consectetuer adipiscing elit. Feugiat maecenas est a sodales aenean elementum et? Massa vel scelerisque nostra blandit conubia mus? Sociosqu nunc ornare malesuada ultricies ex viverra faucibus dui. Efficitur placerat natoque parturient pellentesque mi.",
     list: [
       "White Hat SEO",
       "Black Hat SEO",
@@ -89,6 +97,8 @@ const services = [
   {
     icon: "Analytics",
     title: "Data Analysis",
+    description:
+      "Lorem ipsum odor amet, consectetuer adipiscing elit. Feugiat maecenas est a sodales aenean elementum et? Massa vel scelerisque nostra blandit conubia mus? Sociosqu nunc ornare malesuada ultricies ex viverra faucibus dui. Efficitur placerat natoque parturient pellentesque mi.",
     list: [
       "Diagnostic Analysis",
       "Predictive Analysis",
@@ -100,6 +110,8 @@ const services = [
   {
     icon: "CorporateFare",
     title: "Brand Identity",
+    description:
+      "Lorem ipsum odor amet, consectetuer adipiscing elit. Feugiat maecenas est a sodales aenean elementum et? Massa vel scelerisque nostra blandit conubia mus? Sociosqu nunc ornare malesuada ultricies ex viverra faucibus dui. Efficitur placerat natoque parturient pellentesque mi.",
     list: [
       "Brand Architecture",
       "Brand Authenticity",

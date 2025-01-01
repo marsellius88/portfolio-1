@@ -8,6 +8,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import * as Icons from "@mui/icons-material";
+import ServiceDetail from "../Services/ServiceDetail";
 
 export default function ServiceCard({ service }) {
   const location = useLocation();
@@ -26,9 +27,9 @@ export default function ServiceCard({ service }) {
         >
           {service.title}
         </Typography>
-        <List>
+        <List sx={{ listStyle: "disc", pl: 3 }}>
           {service.list.map((item, index) => (
-            <ListItem key={index} disablePadding>
+            <ListItem sx={{ display: "list-item" }} key={index} disablePadding>
               <ListItemText secondary={item} />
             </ListItem>
           ))}
@@ -36,9 +37,7 @@ export default function ServiceCard({ service }) {
       </CardContent>
       {location.pathname === "/services" && (
         <CardActions>
-          <Button size="small" sx={{ pl: 1 }}>
-            Learn More
-          </Button>
+          <ServiceDetail service={service} />
         </CardActions>
       )}
     </Card>
