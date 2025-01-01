@@ -75,14 +75,44 @@ export default function ServiceDetail({ service }) {
             <Grid size={4}>
               <Box
                 sx={{
-                //   border: "1px solid black",
                   px: 1,
                   py: 1,
                   bgcolor: "secondary.main",
                 }}
               >
-                <Typography sx={{ fontWeight: "bold" }}>Resume</Typography>
-                
+                <Typography sx={{ fontWeight: "bold" }}>Information</Typography>
+                <List>
+                  <ListItem disablePadding sx={{ mb: 1 }}>
+                    <Box>
+                      <Typography variant="body2">Resume:</Typography>
+                      <Typography
+                        variant="body2"
+                        component="a"
+                        href="#"
+                        sx={{
+                          color: "text.secondary",
+                          textDecoration: "none",
+                          "&:hover": {
+                            textDecoration: "underline",
+                          },
+                        }}
+                      >
+                        Download
+                      </Typography>
+                    </Box>
+                  </ListItem>
+                  <ListItem disablePadding sx={{ mb: 1 }}>
+                    <Box>
+                      <Typography variant="body2">Price:</Typography>
+                      <Typography
+                        variant="body2"
+                        sx={{ color: "text.secondary" }}
+                      >
+                        Start from {service.initialPrice}/mo
+                      </Typography>
+                    </Box>
+                  </ListItem>
+                </List>
               </Box>
             </Grid>
           </Grid>

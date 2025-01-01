@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
@@ -11,6 +12,7 @@ import Grid from "@mui/material/Grid2";
 import List from "@mui/material/List";
 import ProjectInformationItem from "./ProjectInformationItem";
 import { formatDate } from "../../utils/utils";
+import ModalHeading from "../ModalHeading";
 
 export default function ProjectDetail({ project }) {
   const [open, setOpen] = useState(false);
@@ -53,40 +55,55 @@ export default function ProjectDetail({ project }) {
             src={project.image}
             alt={project.title}
             style={{
+              // outline: "1px solid #ddd",
               width: "100%",
               height: "250px",
               objectFit: "cover",
-              //   border: "0.25px solid",
-              //   borderColor: "primary.main",
+              border: "1px solid",
+              borderColor: "#ddd",
+              boxShadow: "0 3px 6px rgba(0, 0, 0, 0.1)",
             }}
           />
           <Grid container spacing={2}>
             <Grid size={8}>
-              <Typography sx={{ mt: 2, fontWeight: "bold" }}>
-                {project.title}
-              </Typography>
-              <Typography variant="body1">{project.description}</Typography>
+              <Box sx={{ mt: 2 }}>
+                <ModalHeading text={project.title} />
+                <Typography variant="body1">{project.description}</Typography>
+              </Box>
             </Grid>
             <Grid size={4}>
-              <Typography sx={{ mt: 2, fontWeight: "bold" }}>
-                Information
-              </Typography>
-              <List>
-                <ProjectInformationItem
-                  point="Project Name"
-                  value={project.projectName}
-                />
-                <ProjectInformationItem point="Client" value={project.client} />
-                <ProjectInformationItem point="Budget" value={project.budget} />
-                <ProjectInformationItem
-                  point="Duration"
-                  value={project.duration}
-                />
-                <ProjectInformationItem
-                  point="Date"
-                  value={formatDate(project.date)}
-                />
-              </List>
+              <Box
+                sx={{
+                  mt: 2,
+                  px: 1,
+                  py: 1,
+                  bgcolor: "secondary.main",
+                }}
+              >
+                <Typography sx={{ fontWeight: "bold" }}>Information</Typography>
+                <List>
+                  <ProjectInformationItem
+                    point="Project Name"
+                    value={project.projectName}
+                  />
+                  <ProjectInformationItem
+                    point="Client"
+                    value={project.client}
+                  />
+                  <ProjectInformationItem
+                    point="Budget"
+                    value={project.budget}
+                  />
+                  <ProjectInformationItem
+                    point="Duration"
+                    value={project.duration}
+                  />
+                  <ProjectInformationItem
+                    point="Date"
+                    value={formatDate(project.date)}
+                  />
+                </List>
+              </Box>
             </Grid>
           </Grid>
         </DialogContent>

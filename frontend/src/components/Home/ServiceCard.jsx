@@ -30,7 +30,7 @@ export default function ServiceCard({ service }) {
         <List sx={{ listStyle: "disc", pl: 3 }}>
           {service.list.map((item, index) => (
             <ListItem sx={{ display: "list-item" }} key={index} disablePadding>
-              <ListItemText secondary={item} />
+              <ListItemText primary={item} />
             </ListItem>
           ))}
         </List>
