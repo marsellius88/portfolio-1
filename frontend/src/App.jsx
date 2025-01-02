@@ -16,6 +16,7 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import ProfilePicture from "./assets/woman-2.png";
+import Contact from "./pages/Contact";
 
 const theme = createTheme({
   palette: {
@@ -316,6 +317,7 @@ const router = createBrowserRouter(
       <Route path="services" element={<Services services={services} />} />
       <Route path="projects" element={<Projects projects={projects} />} />
       <Route path="about" element={<About about={about} />} />
+      <Route path="contact" element={<Contact about={about} />} />
     </Route>
   )
 );
