@@ -14,6 +14,8 @@ import Company3 from "./assets/company-3.png";
 import Company4 from "./assets/company-4.jpg";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Projects from "./pages/Projects";
+import About from "./pages/About";
+import ProfilePicture from "./assets/woman-2.png";
 
 const theme = createTheme({
   palette: {
@@ -239,6 +241,62 @@ const testimonials = [
 
 const companies = [Company1, Company2, Company3, Company4];
 
+const about = {
+  name: "Jane Smith",
+  specialization: "UI/UX designer specializing in shopify & webflow.",
+  profile:
+    "Lorem Ipsum is simply dummy text of the printing and pesetting industry has been the industry's standard dummy text ever since the 1500s, when an unkn own printer took galley of type and scrambled.",
+  profileVideoId: "PcV2g-kW-xo",
+  profilePicture: ProfilePicture,
+  resumeDownloadLink: "/",
+  education: [
+    {
+      period: "2009 - 2010",
+      degree: "Bachelor of Business Administration",
+      university: "University of California, Berkeley",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.",
+    },
+    {
+      period: "2012 - 2014",
+      degree: "Masters of Business Administration",
+      university: "University of California, Berkeley",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.",
+    },
+    {
+      period: "2015 - 2016",
+      degree: "Bachelor of Graphic Arts",
+      university: "University of California, Berkeley",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.",
+    },
+  ],
+  experience: [
+    {
+      period: "2016 - 2018",
+      position: "Web Designer",
+      company: "Graphic Dev",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.",
+    },
+    {
+      period: "2018 - 2019",
+      position: "Junior Web Developer",
+      company: "Acme Lab",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.",
+    },
+    {
+      period: "2019 - 2020",
+      position: "Senior Web Developer",
+      company: "Devtwist",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.",
+    },
+  ],
+};
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
@@ -257,6 +315,7 @@ const router = createBrowserRouter(
       />
       <Route path="services" element={<Services services={services} />} />
       <Route path="projects" element={<Projects projects={projects} />} />
+      <Route path="about" element={<About about={about} />} />
     </Route>
   )
 );
