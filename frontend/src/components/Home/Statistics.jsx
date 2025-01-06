@@ -7,7 +7,7 @@ export default function Statistics({ statistics }) {
     <Box sx={{ px: 8, my: 8 }}>
       <Grid container spacing={2}>
         {statistics.map((item, index) => (
-          <Grid key={index} size={{ xs: 12, md: 4 }}>
+          <Grid key={index} size={4}>
             <StatisticItem statistic={item} />
           </Grid>
         ))}

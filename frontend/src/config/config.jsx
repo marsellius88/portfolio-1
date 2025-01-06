@@ -46,13 +46,13 @@ export const servicesCarouselSettings = {
   arrows: false,
   responsive: [
     {
-      breakpoint: 900,
+      breakpoint: 1200,
       settings: {
         slidesToShow: 2,
       },
     },
     {
-      breakpoint: 600,
+      breakpoint: 900,
       settings: {
         slidesToShow: 1,
       },
@@ -70,13 +70,13 @@ export const projectsCarouselSettings = {
   arrows: false,
   responsive: [
     {
-      breakpoint: 900,
+      breakpoint: 1200,
       settings: {
         slidesToShow: 2,
       },
     },
     {
-      breakpoint: 600,
+      breakpoint: 900,
       settings: {
         slidesToShow: 1,
       },

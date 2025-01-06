@@ -22,9 +22,9 @@ export default function Profile({ profilePicture }) {
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
-              alignItems: "flex-start",
+              alignItems: { xs: "center", md: "flex-start" },
               height: "100%",
-              pl: 8,
+              pl: { xs: 0, md: 8 },
             }}
           >
             <Typography
@@ -49,6 +49,7 @@ export default function Profile({ profilePicture }) {
                 fontSize: "1.2rem",
                 my: 4,
                 color: "text.secondary",
+                textAlign: { xs: "center", md: "left" },
               }}
             >
               UI/UX Designer specializing in Shopify & Webflow.

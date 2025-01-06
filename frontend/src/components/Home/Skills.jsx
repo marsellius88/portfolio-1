@@ -12,7 +12,7 @@ export default function Skills({ skills }) {
           // size={6}
           size={{ xs: 12, md: 6 }}
           sx={{
-            height: "calc(100vh - 64px)",
+            height: { xs: "auto", md: "calc(100vh - 64px)" },
           }}
         >
           <Box
@@ -24,7 +24,8 @@ export default function Skills({ skills }) {
               justifyContent: "center",
               alignItems: "flex-start",
               height: "100%",
-              pl: 8,
+              pl: {xs: 4, md: 8},
+              pt: { xs: 4, md: 0 },
             }}
           >
             <Heading
@@ -40,8 +41,9 @@ export default function Skills({ skills }) {
           sx={{
             height: "calc(100vh - 64px)",
             bgcolor: "secondary.main",
-            pr: 8,
-            py: 2,
+            pr: { xs: 0, md: 8 },
+            px: { xs: 4, md: 0 },
+            py: { xs: 0, md: 2 },
             display: "flex",
             justifyContent: "center",
             alignItems: "center",

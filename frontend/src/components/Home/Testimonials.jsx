@@ -14,11 +14,13 @@ export default function Testimonials({ testimonials }) {
         <Grid
           // size={6}
           size={{ xs: 12, md: 6 }}
+          order={{ xs: 2, md: 1 }}
           sx={{
-            height: "calc(100vh - 64px)",
+            height: { xs: "auto", md: "calc(100vh - 64px)" },
             bgcolor: "secondary.main",
-            px: 8,
-            py: 2,
+            px: { xs: 6, md: 8 },
+            py: { xs: 0, md: 2 },
+            pb: { xs: 4, md: 0 },
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -35,8 +37,9 @@ export default function Testimonials({ testimonials }) {
         <Grid
           // size={6}
           size={{ xs: 12, md: 6 }}
+          order={{ xs: 1, md: 2 }}
           sx={{
-            height: "calc(100vh - 64px)",
+            height: { xs: "auto", md: "calc(100vh - 64px)" },
           }}
         >
           <Box
@@ -48,7 +51,8 @@ export default function Testimonials({ testimonials }) {
               justifyContent: "center",
               alignItems: "flex-start",
               height: "100%",
-              pl: 8,
+              pl: { xs: 4, md: 8 },
+              pt: { xs: 4, md: 0 },
             }}
           >
             <Heading
