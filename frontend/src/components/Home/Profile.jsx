@@ -65,6 +65,7 @@ export default function Profile({ profilePicture }) {
           sx={{
             height: "calc(100vh - 64px)",
             bgcolor: "secondary.main",
+            pl: { xs: 3, md: 0 },
             pr: { xs: 0, md: 6 },
             pt: { xs: 0, md: 2 },
             // pr: 6,

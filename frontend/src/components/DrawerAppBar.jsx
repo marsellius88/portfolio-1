@@ -21,13 +21,13 @@ import WorkIcon from "@mui/icons-material/Work";
 import InfoIcon from "@mui/icons-material/Info";
 import EmailIcon from "@mui/icons-material/Email";
 
-const drawerWidth = 240;
+const drawerWidth = "75%";
 
 const pages = [
   { text: "Home", link: "/", icon: <HomeIcon /> },
   { text: "Services", link: "/services", icon: <DesignServicesIcon /> },
   { text: "Projects", link: "/projects", icon: <WorkIcon /> },
-  { text: "About Me", link: "/about", icon: <InfoIcon /> },
+  { text: "About", link: "/about", icon: <InfoIcon /> },
   { text: "Contact", link: "/contact", icon: <EmailIcon /> },
 ];
 
@@ -37,7 +37,7 @@ function DrawerAppBar(props) {
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
-    console.log(mobileOpen)
+    console.log(mobileOpen);
   };
 
   const drawer = (

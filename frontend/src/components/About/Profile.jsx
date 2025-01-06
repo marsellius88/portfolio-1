@@ -55,8 +55,8 @@ export default function Profile({ about }) {
               justifyContent: "center",
               alignItems: { xs: "center", md: "flex-start" },
               height: "100%",
-              pr: { xs: 0, md: 8 },
               px: { xs: 4, md: 0 },
+              pr: { xs: 0, md: 8 },
             }}
           >
             <Typography
