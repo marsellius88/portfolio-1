@@ -4,7 +4,7 @@ import ServiceCard from "../Home/ServiceCard";
 
 export default function ServicesList({ services }) {
   return (
-    <Box sx={{ px: 8, my: 16 }}>
+    <Box sx={{ px: { xs: 4, md: 8 }, my: 16 }}>
       <Grid container spacing={2}>
         {services.map((item, index) => (
           <Grid key={index} size={{ xs: 12, md: 6, lg: 4 }}>
