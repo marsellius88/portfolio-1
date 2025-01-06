@@ -10,7 +10,7 @@ export default function Profile({ profilePicture }) {
       <Grid container>
         <Grid
           // size={6}
-          size={{ xs: 12, sm: 12, md: 6 }}
+          size={{ xs: 12, md: 6 }}
           sx={{
             height: "calc(100vh - 64px)",
           }}
@@ -60,12 +60,14 @@ export default function Profile({ profilePicture }) {
         </Grid>
         <Grid
           // size={6}
-          size={{ xs: 12, sm: 12, md: 6 }}
+          size={{ xs: 12, md: 6 }}
           sx={{
-            height: "calc(100vh - 64px)", // Tinggi kolom
+            height: "calc(100vh - 64px)",
             bgcolor: "secondary.main",
-            pr: 6,
-            pt: 2,
+            pr: { xs: 0, md: 6 },
+            pt: { xs: 0, md: 2 },
+            // pr: 6,
+            // pt: 2,
           }}
         >
           <img

@@ -12,7 +12,8 @@ export default function Testimonials({ testimonials }) {
     <Box>
       <Grid container>
         <Grid
-          size={6}
+          // size={6}
+          size={{ xs: 12, md: 6 }}
           sx={{
             height: "calc(100vh - 64px)",
             bgcolor: "secondary.main",
@@ -32,7 +33,8 @@ export default function Testimonials({ testimonials }) {
           </Box>
         </Grid>
         <Grid
-          size={6}
+          // size={6}
+          size={{ xs: 12, md: 6 }}
           sx={{
             height: "calc(100vh - 64px)",
           }}

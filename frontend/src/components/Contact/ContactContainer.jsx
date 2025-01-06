@@ -8,9 +8,9 @@ import Email from "./Email";
 
 export default function ContactContainer({ about }) {
   return (
-    <Box sx={{ px: 8, my: 8 }}>
+    <Box sx={{ px: { xs: 4, md: 8 }, my: 8 }}>
       <Grid container spacing={2}>
-        <Grid size={4}>
+        <Grid size={{ xs: 12, md: 4 }} order={{ xs: 2, md: 1 }}>
           <Box
             sx={{
               px: 2,
@@ -42,8 +42,8 @@ export default function ContactContainer({ about }) {
             </List>
           </Box>
         </Grid>
-        <Grid size={8}>
-          <Box sx={{ ml: 8 }}>
+        <Grid size={{ xs: 12, md: 8 }} order={{ xs: 1, md: 2 }}>
+          <Box sx={{ ml: { xs: 0, md: 8 } }}>
             <Heading
               icon="MailSharp"
               title="If You Have Any Project or Need Help, Contact Me."

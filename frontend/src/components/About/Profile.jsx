@@ -10,7 +10,7 @@ export default function Profile({ about }) {
     <Box>
       <Grid container>
         <Grid
-          size={{ xs: 12, sm: 12, md: 6 }}
+          size={{ xs: 12, md: 6 }}
           sx={{
             height: "calc(100vh - 64px)",
             // pl: 8,
@@ -42,7 +42,7 @@ export default function Profile({ about }) {
         </Grid>
         <Grid
           // size={6}
-          size={{ xs: 12, sm: 12, md: 6 }}
+          size={{ xs: 12, md: 6 }}
           sx={{
             height: "calc(100vh - 64px)",
           }}
@@ -53,9 +53,10 @@ export default function Profile({ about }) {
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
-              alignItems: "flex-start",
+              alignItems: { xs: "center", md: "flex-start" },
               height: "100%",
-              pr: 8,
+              pr: { xs: 0, md: 8 },
+              px: { xs: 4, md: 0 },
             }}
           >
             <Typography
@@ -70,6 +71,7 @@ export default function Profile({ about }) {
                 fontSize: "2rem",
                 my: 1,
                 color: "text.secondary",
+                textAlign: { xs: "center", md: "left" },
               }}
             >
               {about.specialization}
@@ -79,6 +81,7 @@ export default function Profile({ about }) {
               sx={{
                 my: 1,
                 color: "text.secondary",
+                textAlign: { xs: "center", md: "left" },
               }}
             >
               {about.profile}

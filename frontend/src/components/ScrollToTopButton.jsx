@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Fab from "@mui/material/Fab";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Box from "@mui/material/Box";
@@ -32,7 +32,7 @@ export default function ScrollToTopButton() {
       sx={{
         position: "fixed",
         bottom: 16,
-        right: 16,
+        right: 8,
         zIndex: 1000,
       }}
     >

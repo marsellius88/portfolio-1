@@ -1,14 +1,22 @@
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
-import { Facebook, Twitter, Instagram, LinkedIn } from "@mui/icons-material";
+import {
+  Call,
+  Email,
+  Facebook,
+  Instagram,
+  LinkedIn,
+} from "@mui/icons-material";
 import Typography from "@mui/material/Typography";
+import about from "../data/about";
 
 export default function Footer() {
-  const socialMedia = [
-    { icon: <Facebook />, url: "https://www.facebook.com" },
-    { icon: <Twitter />, url: "https://www.twitter.com" },
-    { icon: <Instagram />, url: "https://www.instagram.com" },
-    { icon: <LinkedIn />, url: "https://www.linkedin.com" },
+  const contact = [
+    { icon: <Call />, url: `tel:${about.contact.phone}` },
+    { icon: <Email />, url: `mailto:${about.contact.email}` },
+    { icon: <Instagram />, url: `https://${about.social.instagram}` },
+    { icon: <Facebook />, url: `https://${about.social.facebook}` },
+    { icon: <LinkedIn />, url: `https://${about.social.linkedin}` },
   ];
 
   return (
@@ -36,7 +44,7 @@ export default function Footer() {
           gap: 1,
         }}
       >
-        {socialMedia.map((media, index) => (
+        {contact.map((media, index) => (
           <IconButton
             key={index}
             href={media.url}

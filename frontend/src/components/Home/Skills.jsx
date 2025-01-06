@@ -10,7 +10,7 @@ export default function Skills({ skills }) {
       <Grid container>
         <Grid
           // size={6}
-          size={{ xs: 12, sm: 12, md: 6 }}
+          size={{ xs: 12, md: 6 }}
           sx={{
             height: "calc(100vh - 64px)",
           }}
@@ -36,7 +36,7 @@ export default function Skills({ skills }) {
         </Grid>
         <Grid
           // size={6}
-          size={{ xs: 12, sm: 12, md: 6 }}
+          size={{ xs: 12, md: 6 }}
           sx={{
             height: "calc(100vh - 64px)",
             bgcolor: "secondary.main",

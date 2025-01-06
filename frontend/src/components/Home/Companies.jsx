@@ -14,7 +14,8 @@ export default function Companies({ companies }) {
         {companies.map((item, index) => (
           <Grid
             key={index}
-            size={3}
+            // size={3}
+            size={{ xs: 6, md: 3 }}
             sx={{
               display: "flex",
               justifyContent: "center",

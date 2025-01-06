@@ -16,9 +16,9 @@ export default function EducationExperience({ about }) {
   };
 
   return (
-    <Box sx={{ px: 8, my: 8 }}>
+    <Box sx={{ px: {xs: 4, md: 8}, my: 8 }}>
       <Grid container spacing={2}>
-        <Grid size={6}>
+        <Grid size={{xs: 12, md: 6}}>
           <Button
             size="large"
             variant={active === "Education" ? "contained" : "outlined"}
@@ -33,7 +33,7 @@ export default function EducationExperience({ about }) {
             Education
           </Button>
         </Grid>
-        <Grid size={6}>
+        <Grid size={{xs: 12, md: 6}}>
           <Button
             size="large"
             variant={active === "Experience" ? "contained" : "outlined"}

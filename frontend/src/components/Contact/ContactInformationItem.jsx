@@ -18,21 +18,15 @@ export default function ContactInformationItem({ point, value, link }) {
           {point}:
         </Typography>
         {link ? (
-          //   <Link
-          //     href={link}
-          //     sx={{
-          //       color: "inherit",
-          //       textDecoration: "none",
-          //       fontWeight: "bold",
-          //     }}
-          //     target="_blank"
-          //     rel="noopener noreferrer"
-          //   >
-          //     {value}
-          //   </Link>
           <Typography
             component="a"
-            sx={{ color: "inherit", textDecoration: "none" }}
+            sx={{
+              color: "inherit",
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "underline",
+              },
+            }}
             href={link}
             target="_blank"
             rel="noopener noreferrer"

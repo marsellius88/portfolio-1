@@ -5,15 +5,21 @@ import Button from "@mui/material/Button";
 
 export default function Email() {
   return (
-    <Box component="form" noValidate autoComplete="off" sx={{ mt: 3 }}>
-      <Grid container spacing={2}>
-        <Grid size={6}>
+    <Box
+      component="form"
+      noValidate
+      autoComplete="off"
+      sx={{ mt: 3, mb: { xs: 16, md: 0 } }}
+    >
+      <Grid container spacing={{ xs: 0, md: 2 }}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <TextField
             fullWidth
             required
             label="Name"
             variant="outlined"
             margin="normal"
+            id="name"
           />
           <TextField
             fullWidth
@@ -22,21 +28,24 @@ export default function Email() {
             type="email"
             variant="outlined"
             margin="normal"
+            id="email"
           />
         </Grid>
-        <Grid size={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <TextField
             fullWidth
             label="Phone"
             type="tel"
             variant="outlined"
             margin="normal"
+            id="phone"
           />
           <TextField
             fullWidth
             label="Subject"
             variant="outlined"
             margin="normal"
+            id="subject"
           />
         </Grid>
       </Grid>
@@ -48,6 +57,7 @@ export default function Email() {
         label="Message"
         variant="outlined"
         margin="normal"
+        id="message"
       />
       <Button size="large" type="submit" variant="contained" sx={{ mt: 2 }}>
         Submit Message
