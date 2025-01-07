@@ -12,9 +12,10 @@ export default function Profile({ about }) {
         <Grid
           size={{ xs: 12, md: 6 }}
           sx={{
-            height: "calc(100vh - 64px)",
+            height: { xs: "auto", md: "calc(100vh - 64px)" },
             // pl: 8,
-            pt: 2,
+            pt: { xs: 8, md: 2 },
+            pb: { xs: 4, md: 0 },
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -55,8 +56,8 @@ export default function Profile({ about }) {
               justifyContent: "center",
               alignItems: { xs: "center", md: "flex-start" },
               height: "100%",
-              px: { xs: 4, md: 0 },
-              pr: { xs: 0, md: 8 },
+              pl: { xs: 4, md: 0 },
+              pr: { xs: 4, md: 8 },
             }}
           >
             <Typography
