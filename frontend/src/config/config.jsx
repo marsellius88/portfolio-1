@@ -93,4 +93,12 @@ export const testimonialsCarouselSettings = {
   swipeToSlide: true,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
+  responsive: [
+    {
+      breakpoint: 900,
+      settings: {
+        arrows: false,
+      },
+    },
+  ],
 };

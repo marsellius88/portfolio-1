@@ -1,4 +1,4 @@
-import ProfilePicture from "../assets/woman-2.png";
+import ProfilePicture from "../assets/woman-2-1.png";
 
 const about = {
   name: "Jane Smith",

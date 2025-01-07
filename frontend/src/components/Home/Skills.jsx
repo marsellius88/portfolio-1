@@ -41,8 +41,9 @@ export default function Skills({ skills }) {
           sx={{
             height: "calc(100vh - 64px)",
             bgcolor: "secondary.main",
-            px: { xs: 4, md: 0 },
-            pr: { xs: 0, md: 8 },
+            // px: { xs: 4, md: 0 },
+            pr: { xs: 4, md: 8 },
+            pl: { xs: 4, md: 0 },
             py: { xs: 0, md: 2 },
             display: "flex",
             justifyContent: "center",

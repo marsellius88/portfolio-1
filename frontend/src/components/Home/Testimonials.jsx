@@ -18,7 +18,7 @@ export default function Testimonials({ testimonials }) {
           sx={{
             height: { xs: "auto", md: "calc(100vh - 64px)" },
             bgcolor: "secondary.main",
-            px: { xs: 6, md: 8 },
+            px: { xs: 4, md: 8 },
             py: { xs: 0, md: 2 },
             pb: { xs: 4, md: 0 },
             display: "flex",

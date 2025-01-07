@@ -60,12 +60,35 @@ export default function Profile({ profilePicture }) {
           </Box>
         </Grid>
         <Grid
+          size={{ xs: 12, md: 6 }}
+          sx={{
+            position: "relative",
+            height: { xs: "50vh", md: "calc(100vh - 64px)" },
+            bgcolor: "secondary.main",
+            pr: { xs: 0, md: 6 },
+            pt: { xs: 0, md: 2 },
+          }}
+        >
+          <img
+            src={profilePicture}
+            alt="Profile picture"
+            style={{
+              position: "absolute",
+              bottom: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
+        </Grid>
+
+        {/* <Grid
           // size={6}
           size={{ xs: 12, md: 6 }}
           sx={{
             height: "calc(100vh - 64px)",
             bgcolor: "secondary.main",
-            pl: { xs: 3, md: 0 },
             pr: { xs: 0, md: 6 },
             pt: { xs: 0, md: 2 },
             // pr: 6,
@@ -81,7 +104,7 @@ export default function Profile({ profilePicture }) {
               objectFit: "cover",
             }}
           />
-        </Grid>
+        </Grid> */}
       </Grid>
     </Box>
   );

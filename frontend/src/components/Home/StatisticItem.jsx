@@ -34,7 +34,7 @@ import * as Icons from "@mui/icons-material";
 
 export default function StatisticItem({ statistic }) {
   const IconComponent = Icons[statistic.icon] || Icons.HelpOutline;
-  const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState(false);
   const [currentValue, setCurrentValue] = useState(0);
   const containerRef = useRef(null);
 
@@ -82,10 +82,26 @@ export default function StatisticItem({ statistic }) {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        mb: { xs: 4, md: 0 },
+        flexDirection: {
+          xs: "column",
+          md: "row",
+        },
       }}
     >
-      <IconComponent sx={{ fontSize: 75, mr: 2, color: "text.primary" }} />
-      <Stack spacing={0.5}>
+      <IconComponent
+        sx={{
+          fontSize: 75,
+          mr: { xs: 0, md: 2 },
+          color: "text.primary",
+        }}
+      />
+      <Stack
+        spacing={0.5}
+        sx={{
+          textAlign: { xs: "center", md: "left" },
+        }}
+      >
         <Typography variant="h4" sx={{ fontWeight: "bold" }}>
           {Math.floor(currentValue)}
         </Typography>

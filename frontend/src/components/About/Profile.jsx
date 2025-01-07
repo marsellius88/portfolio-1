@@ -61,7 +61,11 @@ export default function Profile({ about }) {
           >
             <Typography
               variant="h3"
-              sx={{ fontSize: "4rem", fontWeight: "bold" }}
+              sx={{
+                fontSize: "4rem",
+                fontWeight: "bold",
+                textAlign: { xs: "center", md: "left" },
+              }}
             >
               I’m Jane Smith
             </Typography>

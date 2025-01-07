@@ -8,7 +8,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function Projects({ projects }) {
   return (
-    <Box sx={{ px: 8, py: 16 }}>
+    <Box sx={{ px: { xs: 4, md: 8 }, my: 16 }}>
       <Heading
         icon="Work"
         title="My Completed Projects."

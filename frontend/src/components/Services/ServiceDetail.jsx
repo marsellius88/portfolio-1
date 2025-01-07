@@ -53,7 +53,7 @@ export default function ServiceDetail({ service }) {
         </IconButton>
         <DialogContent dividers>
           <Grid container spacing={2}>
-            <Grid size={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <ModalHeading text={service.title} />
               <Typography variant="body1">{service.description}</Typography>
               <Typography variant="body1" sx={{ mt: 2 }}>
@@ -72,7 +72,7 @@ export default function ServiceDetail({ service }) {
                 ))}
               </List>
             </Grid>
-            <Grid size={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Box
                 sx={{
                   px: 1,

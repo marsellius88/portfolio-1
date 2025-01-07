@@ -8,7 +8,7 @@ import { servicesCarouselSettings } from "../../config/config";
 
 export default function Services({ services }) {
   return (
-    <Box sx={{ px: 8, my: 16 }}>
+    <Box sx={{ px: { xs: 4, md: 8 }, my: 16 }}>
       <Heading
         icon="DesignServices"
         title="Services Provide for My Clients."

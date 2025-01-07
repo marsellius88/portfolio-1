@@ -4,7 +4,7 @@ import Heading from "./Heading";
 
 export default function Companies({ companies }) {
   return (
-    <Box sx={{ px: 8, my: 16 }}>
+    <Box sx={{ px: { xs: 4, md: 8 }, my: 16 }}>
       <Heading
         icon="Business"
         title="Work with Trusted Companies."
